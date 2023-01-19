@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/background.css">
+      <link rel="icon" href="img/azestudios.jpeg">
+      <link rel="stylesheet" href="css/cards.css">
+      <script src="js/card.js" defer></script>
+      <title>Projects | AzE</title>
+      <script src="https://unpkg.com/swup@latest/dist/swup.min.js" defer></script>  
+
+   </head>
+   <body onload="checkIfMobileDevice()">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <script src="js/navbar.js"></script>
+      <button class="openbtn" onclick="openNav()">☰</button>  
+      <div id="mySidebar" class="sidebar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html" id="link"  class="hover-underline-animation2">Home</a>
+         <a href="about.html" id="link"  class="hover-underline-animation2">About</a>
+         <a href="projects.html" id="link"  class="hover-underline-animation2">Projects</a>
+         <a href="https://github.com/azedeveloper" id="github"target="_blank" ><img src="img/github-light.png"></a>
+      </div>
+      <div class="wrapper">
+       <center><div  class="hover-underline-animation"id="title">My Projects:</div></center>  
+         <br>
+         <br>
+         <center>  <div id="cards">
+            <div class="card" onclick="redirectTo('notes.html')">
+             
+                  <div class="card-content">
+                     <div class="card-image">
+                       <img src="img/notes-transparent.png" alt="">
+                     </div>
+                     <div class="card-info-wrapper">
+                       <div class="card-info">
+                      
+                         <div class="card-info-title">
+                           <h3>Notes Website</h3>  
+                           <h4>Create and Save sticky notes easily!</h4>
+                         </div>    
+                       </div>
+                     </div>
+                   </div>
+               
+             
+            </div>
+            
+            <div class="card" onclick="redirectTo('azetyper.html')">
+             
+               <div class="card-content">
+                  <div class="card-image">
+                  <center> <img src="img/azetyper.png" alt=""></center> 
+                  </div>
+                  <div class="card-info-wrapper">
+                    <div class="card-info">
+                  
+                     <div class="card-info-title" id="card-center">
+                        <h3>Aze Typer</h3>  
+                        <h4>Test your typing speed.</h4>
+                      </div>  
+                
+                   
+                    </div>
+                  </div>
+                </div>
+            
+          
+         </div>
+          </div></center>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <center><a  id="about-button" class="hover-underline-animation" href="index.html"> Go to the Home Page -></a></center>
+
+
+      </div>
+
+      
+   </body>
+</html>
