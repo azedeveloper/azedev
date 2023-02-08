@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Loading...</title>
-    <meta http-equiv="refresh" content="0; url=http://example.com">
-    <script>window.location.href = "https://open.spotify.com/playlist/2y1LkhoPkgpMY8mmdr24t0?si=be3c081cc3b04a98"</script>
-  </head>
-  <body>
-    <p>Not redirected? Click <a href="https://open.spotify.com/playlist/2y1LkhoPkgpMY8mmdr24t0?si=be3c081cc3b04a98">here</a></p>
-  </body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/background.css">
+      <link rel="icon" href="img/azestudios.jpeg">
+      <title>Notes | AzE</title>
+      <script src="https://unpkg.com/swup@latest/dist/swup.min.js" defer></script>  
+   </head>
+   <body onload="checkIfMobileDevice()">
+      
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <script src="js/navbar.js"></script>
+
+      <button class="openbtn" onclick="openNav()">☰</button>  
+      <div id="mySidebar" class="sidebar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html" id="link"  class="hover-underline-animation2">Home</a>
+         <a href="about.html" id="link"  class="hover-underline-animation2">About</a>
+         <a href="projects.html" id="link"  class="hover-underline-animation2">Projects</a>
+         <a href="https://github.com/azedeveloper" id="github"target="_blank" ><img src="img/github-light.png"></a>
+      </div>
+      <div class="wrapper">
+
+       <center><img src="img/spotify.png" id="notes-image"></center> 
+        <center>
+
+          <br>
+
+         <div id="title">Playlist</div>
+            <br>
+            <br>
+         <div id="subtitle">This is my playlist, if you like old rap you'll surely love this! </div>
+
+         
+        </center>
+         <br>
+
+
+       
+         <br>
+         <br>
+         
+         <center><a  id="about-button" class="hover-underline-animation" href="https://open.spotify.com/playlist/2y1LkhoPkgpMY8mmdr24t0?si=be3c081cc3b04a98" target="_blank"> Open -></a></center>
+      </div>
+   </body>
 </html>
