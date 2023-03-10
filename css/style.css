@@ -438,6 +438,8 @@
   color: #fff;
   letter-spacing: 5px;
   animation: zoomIn6 1s;
+  width: 100%;
+  text-align: center;
 }
 .glitch:before, .glitch:after {
   display: block;
@@ -470,6 +472,7 @@
     animation: zoomIn7 1s;
  }
 }
+
 
 @keyframes zoomIn6 {
   0% {
@@ -507,4 +510,29 @@
   to {
     transform: translate(0);
  }
+}
+
+
+:root {
+  --scrollbar-background: transparent;
+  --scrollbar-thumb: #555;
+  --scrollbar-thumb-hover: #888;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-background);
 }

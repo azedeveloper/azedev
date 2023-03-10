@@ -11,15 +11,6 @@ function openNav() {
   }
 
   function checkIfMobileDevice() {
-    let details = navigator.userAgent;
-    let regexp = /android|iphone|kindle|ipad/i;
-    let isMobileDevice = regexp.test(details);
-    
-    if (isMobileDevice) {
-        document.body.style.display = 'none';
-        document.write('This website is not currently supported on mobile devices.')
-    }
-
-    document.getElementById("sidebar-footer").style.animationFillMode = 'backwards';
+    console.log("Hello world!")
 }
   
