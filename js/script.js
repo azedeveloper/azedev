@@ -10,9 +10,8 @@ document.getElementById("cards").onmousemove = e => {
   }
 
 
-
-
-function redirectTo(website) {
-    window.open(website, "_self")
-
+  
+function redirectTo(i) {
+  window.open(i)
 }
+
