@@ -4,12 +4,28 @@
     <h2 style="color: white; " class="white-text scaled-text">My personal portfolio made in HTML/CSS/JS.</h2>
 </div>
 
-### Information
+### 📝 Table of Contents
 
-This is my personal portfolio. TIt was made using HTML, CSS, JSS. 
+- [Information](#information)
+- [Features](#features)
+- [Bugs](#bugs)
+- [Contributing](#contributing)
 
-### Bugs
+### 📚 Information
 
-The website might have some bugs, if you find any bugs or typos feel free to fix them here.
+This is my personal portfolio website, created with love and dedication using HTML, CSS, and JavaScript.
 
+### ✨ Features
 
+- Responsive design 📱
+- Interactive elements 🖱️
+- Smooth scrolling 📜
+- Clean and modern look 👌
+
+### 🐞 Bugs
+
+The website might have some bugs. If you find any bugs or typos, feel free to fix them here.
+
+### 🤝 Contributing
+
+Contributions are always welcome! If you'd like to help improve this project, feel free to fork the repository and submit a pull request. 🚀
