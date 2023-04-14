@@ -14,7 +14,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-center #comment {
+center p {
     z-index: 9999;
 }
 
