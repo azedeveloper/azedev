@@ -14,6 +14,10 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+center #comment {
+    z-index: 9999;
+}
+
 
 .section {
   min-height: 100vh;
