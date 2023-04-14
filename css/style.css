@@ -18,6 +18,11 @@ center p {
     z-index: 9999;
 }
 
+#comment a {
+    color: rgb(122, 122, 122);
+    font-family: monospace;
+}
+
 
 .section {
   min-height: 100vh;
