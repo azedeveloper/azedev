@@ -11,6 +11,7 @@
 <body>
     <div class="intro section">
         <div class="section-content">
+            <h1 class="blogtitle">📝</h1>
             <h1>Welcome to my <span id="aze">blog</span></h1>
             <div id="comment">//scroll down 👇</div>
         </div>
@@ -24,7 +25,7 @@
                 <div class="card" onclick="redirectTo('posts/python_vs_js.html')">
                    <div class="card-content">
                       <div class="card-image">
-                         <img src="img/pyjs.png" alt="Python vs JS">
+                         <img src="pyjs.png" alt="Python vs JS">
                       </div>
                       <div class="card-info-wrapper">
                          <div class="card-info">
@@ -39,7 +40,7 @@
                 <div class="card" onclick="redirectTo('posts/programs.html')">
                    <div class="card-content">
                       <div class="card-image">
-                         <center> <img src="img/p.png" alt="Programs"></center>
+                         <center> <img src="p.png" alt="Programs"></center>
                       </div>
                       <div class="card-info-wrapper">
                          <div class="card-info">
@@ -56,6 +57,21 @@
         </div>
         
     </div>
-    <script src="blog.js"></script>
+    <script>
+document.getElementById("cards").onmousemove = e => {
+    for(const card of document.getElementsByClassName("card")) {
+      const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+  
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    };
+  }
+
+  function redirectTo(i) {
+    window.open(i, "_self")
+  }
+    </script>
 </body>
 </html>
