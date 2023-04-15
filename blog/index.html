@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="blog.css">
+    <title>AzE :: Blog</title>
+</head>
+<body>
+    <div class="intro section">
+        <div class="section-content">
+            <h1>Welcome to my <span id="aze">blog</span></h1>
+            <div id="comment">//scroll down 👇</div>
+        </div>
+        
+    </div>
+    <div class="posts section">
+        <div class="section-content">
+            <h1>Blog Posts</span></h1>
+            <div id="comment">//Check them out! 👀</div>
+            <div id="cards">
+                <div class="card" onclick="redirectTo('posts/python_vs_js.html')">
+                   <div class="card-content">
+                      <div class="card-image">
+                         <img src="img/pyjs.png" alt="Python vs JS">
+                      </div>
+                      <div class="card-info-wrapper">
+                         <div class="card-info">
+                            <div class="card-info-title">
+                               <h3>Python vs JS</h3>
+                               <h4>What is the better language?</h4>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="card" onclick="redirectTo('posts/programs.html')">
+                   <div class="card-content">
+                      <div class="card-image">
+                         <center> <img src="img/p.png" alt="Programs"></center>
+                      </div>
+                      <div class="card-info-wrapper">
+                         <div class="card-info">
+                            <div class="card-info-title" id="card-center">
+                               <h3>Programs</h3>
+                               <h4>Top programs that every programmer <u>needs</u></h4>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             
+             </div>
+        </div>
+        
+    </div>
+    <script src="blog.js"></script>
+</body>
+</html>
