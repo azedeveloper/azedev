@@ -10,7 +10,7 @@ body {
 }
 
 #aze {
-	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(181, 27, 184) 0%, rgba(77, 0, 255, 1) 100%);
+	background: linear-gradient(90deg, #020024 0%, #b51bb8 0%, #4d00ff 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -23,7 +23,6 @@ center p {
 	color: rgb(122, 122, 122);
 	font-family: monospace;
 }
-
 
 .section {
 	min-height: 100vh;
@@ -62,7 +61,6 @@ center p {
 	position: absolute;
 	border: 2px solid black;
 	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(181, 27, 184) 0%, rgba(77, 0, 255, 1) 100%);
-	box-shadow: 0px 0px 100px rgb(181, 27, 184);
 }
 
 #cube-container .face.top {
@@ -226,6 +224,7 @@ center p {
 
 .section-content {
 	display: flex;
+	padding-top: 120px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -233,7 +232,9 @@ center p {
 }
 
 .section-content h1 {
-	margin-bottom: 1rem;
+	position: absolute;
+	padding-top: 130px;
+
 }
 
 .card {
@@ -504,3 +505,66 @@ html {
 ::-webkit-scrollbar-corner {
 	background: var(--scrollbar-background);
 }
+
+#cube-container .face {
+	color: #6f1071 ;
+	box-shadow: 0px 0px 100px #6f1071;
+	animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px #6f107190, 0 0 100px #6f107176, 0 0 50px #5e013076;
+  }
+
+  from {
+    text-shadow: 0 0 20px #6f107190, 0 0 100px #6f107176, 0 0 50px #5e013076;
+  }
+}
+
+.loade span {
+    color: #faebd7;
+    text-shadow: 0 0 0 #faebd7;
+    -webkit-animation: loading 1s ease-in-out infinite alternate;
+  }
+
+@-webkit-keyframes loading {
+    to {
+      text-shadow: 20px 0 70px #7e1380;
+      color: #7e1380;
+    }
+  }
+  .loade span:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+  }
+  .loade span:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+  }
+  .loade span:nth-child(4) {
+    -webkit-animation-delay: 0.3s;
+  }
+  .loade span:nth-child(5) {
+    -webkit-animation-delay: 0.4s;
+  }
+  .loade span:nth-child(6) {
+    -webkit-animation-delay: 0.5s;
+  }
+  .loade span:nth-child(7) {
+    -webkit-animation-delay: 0.6s;
+  }
+  .loade span:nth-child(8) {
+    -webkit-animation-delay: 0.7s;
+  }
+  .loade span:nth-child(9) {
+    -webkit-animation-delay: 0.8s;
+  }
+  
+  .loade span:nth-child(10) {
+    -webkit-animation-delay: 0.9s;
+  }
+  .loade span:nth-child(11) {
+    -webkit-animation-delay: 1s;
+  }
+  .loade span:nth-child(12) {
+    -webkit-animation-delay: 1.1s;
+  }
+ 
