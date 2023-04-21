@@ -13,7 +13,7 @@
 
 ### 📚 Information
 
-This is my personal portfolio website, created with love and dedication using HTML, CSS, and JavaScript.
+
 
 ### ✨ Features
 
