@@ -1,188 +1,41 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="shortcut icon" href="assets/img/icon.png">
-      <title>AzE</title>
-      <meta content="AzE" property="og:title">
-      <meta content="👋Hi I'm AzE!" property="og:description">
-      <meta property="og:image" content="https://i.ibb.co/MP8CkDt/icon.png" />
-   </head>
-   <body>
-      <div class="intro section">
-         <div class="section-content">
-            <div id='cube-container'>
-               <div class="face top"></div>
-               <div class="face right"></div>
-               <div class="face bottom"></div>
-               <div class="face left"></div>
-               <div class="face back">
-                  <div class="hover">(hover me)</div>
-               </div>
-               <div class="face front"></div>
-            </div>
-            <h1>Hi I'm <span id="aze">AzE</span></h1>
-            <p id="comment">//scroll down 👇</p>
-         </div>
-      </div>
-      <div class="about section" id="intro">
-         <div class="section-content">
-            <h1>About Me</h1>
-            <p>👋 Hi, I'm Albin! I'm a game and web developer from Sweden 🇸🇪, focusing mainly on front-end development.</p>
-            <p>⚙️ I've been programming for about 4 years and enjoy working with various languages and frameworks.</p>
-            <p>🎯 My goal is to create visually appealing and user-friendly experiences on both web and gaming platforms 🎮.</p>
-            <div class="cat-gif-wrapper">
-               <div id="cat-gif-container">
-                  <img id="cat-gif" src="" alt="Cat Gif">
-                  <div class="loader"></div>
-               </div>
-            </div>
-            <script src="js/catGif.js"></script>
-            <br>
-            <br>
-            <p id="comment">//continue scrolling 👇</p>
-         </div>
-      </div>
-      </div>
-      <div class="skills section" id="skills">
-         <div class="section-content">
-            <h1>Skills</h1>
-            <p>These are the languages and frameworks I use:</p>
-            <div class="skills">
-               <div class="skill react">
-                  <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="">
-                  React
-               </div>
-               <div class="skill js">
-                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="">
-                  JavaScript
-               </div>
-               <div class="skill ts">
-                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="">
-                  TypeScript
-               </div>
-               <div class="skill unity">
-                  <img src="https://cdn-icons-png.flaticon.com/512/5969/5969294.png" alt="">
-                  Unity
-               </div>
-               <div class="skill db">
-                  <img src="https://img.icons8.com/color/512/mongodb.png" alt="">
-                  MongoDB
-               </div>
-               <div class="skill html">
-                  <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="">
-                  HTML
-               </div>
-               <div class="skill css">
-                  <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="">
-                  CSS
-               </div>
-               <div class="skill dc">
-                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="">
-                  DiscordJS
-               </div>
-            </div>
-            <br>
-            <p id="comment">//a bit more... 👇</p>
-         </div>
-      </div>
-      <div class="projects section" id="projects">
-         <div class="section-content">
-            <h1>Projects</h1>
-            <p>These are some of the projects I've made:</p>
-            <div id="cards">
-               <div class="card" onclick="redirectTo('https://azenotes.vercel.app/')">
-                  <div class="card-content">
-                     <div class="card-image">
-                        <img src="assets/img/notes.png" alt="Notes">
-                     </div>
-                     <div class="card-info-wrapper">
-                        <div class="card-info">
-                           <div class="card-info-title">
-                              <h3>Notes Website</h3>
-                              <h4>Create and Save sticky notes easily!</h4>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="card" onclick="redirectTo('https://www.azetyper.lol/')">
-                  <div class="card-content">
-                     <div class="card-image">
-                        <center> <img src="assets/img/azetyper.png" alt="AzE Typer"></center>
-                     </div>
-                     <div class="card-info-wrapper">
-                        <div class="card-info">
-                           <div class="card-info-title" id="card-center">
-                              <h3>Aze Typer</h3>
-                              <h4>Test your typing speed.</h4>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="card" onclick="redirectTo('https://azedeveloper.github.io/NanoCode/')">
-                  <div class="card-content">
-                     <div class="card-image">
-                        <center> <img src="assets/img/nanocode.png" alt="NanoCode"></center>
-                     </div>
-                     <div class="card-info-wrapper">
-                        <div class="card-info">
-                           <div class="card-info-title" id="card-center">
-                              <h3>NanoCode</h3>
-                              <h4>Minimalist, Open-source and Light-weight code editor.</h4>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="card" onclick="redirectTo('https://azedev.itch.io/minesweeper-clone')">
-                  <div class="card-content">
-                     <div class="card-image">
-                        <center> <img src="assets/img/minesweeper.webp" alt="Minesweeper Clone"></center>
-                     </div>
-                     <div class="card-info-wrapper">
-                        <div class="card-info">
-                           <div class="card-info-title" id="card-center">
-                              <h3>Minesweeper</h3>
-                              <h4>A little clone of minesweeper.</h4>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <br>
-            <p id="comment">//almost there.. 👇</p>
-         </div>
-      </div>
-      <div class="contact section" id="contact">
-         <div class="section-content">
-            <h1>Contact Me</h1>
-            <p>Here are some of my socials:</p>
-            <ul>
-               <li>Twitter 🐦: <a href="https://twitter.com/alb1n_ze" id="comment">@alb1n_ze</a></li>
-               <li>Email 📧: <a href="mailto:albin.business@yahoo.com" id="comment">hi@azedev.net</a></li>
-               <li>Blog 📝: <a href="https://blog.azedev.net/" id="comment">blog.azedev.net</a></li>
-               <li>Discord 💬: <a href="https://discord.com/users/1038535490133037127" id="comment">azedev</a></li>
-            </ul>
-            <br>
-            <p id="comment">//one last scroll... 👇</p>
-         </div>
-      </div>
-      <div class="end section"  id="end-section" id="end">
-         <canvas id="confetti-canvas"></canvas>
-         <div class="section-content">
-            <h1>You reached the bottom 🎉</h1>
-            <center>
-               <p id="comment">//Found a bug? Fix it on <a href="https://github.com/azedeveloper/azedev">GitHub</a> 🐞</p>
-            </center>
-         </div>
-      </div>
-      <script src="js/script.js"></script> 
-      <script src="js/confetti.js"></script>
-   </body>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Saturn">
+    <meta property="og:image" content="assets/saturn.webp" />
+    <link rel="preload" href="assets/robotomono.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>azedev.net</title>
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+   <!-- <img src="assets/saturn.webp" alt="Saturn" width="50px" height="50px">-->
+    <br>
+    <h1>azedev.net</h1>
+  
+    <p>
+      Welcome to my personal portfolio.
+    </p>
+    <h2>About Me</h2>
+    <p>I'm a self-taught software developer located in Sweden with over 5 years of experience.</p>
+    <p>I specialize in many different frameworks and languages such as:</p>
+    <p><b>C, C++, C#, JavaScript, Python, Java, PHP</b></p>
+    <p><b>Unity, SDL2, Laravel, React, Vue, LibGDX</b></p>
+    <br>
+    <h2>My Projects:</h2>
+    <ul>
+        <li><a href="https://github.com/azedeveloper/NanoCode">NanoCode</a> - A minimalistic code editor made in Tauri.</li>
+        <li><a href="https://azedev.itch.io/astroblast">Astroblast</a> - A simple rougelike space-shooter made in Unity.</li>
+    </ul>
+    <h2>Contact:</h2>
+    <ul>
+      <li>X - <a href="https://x.com/@alb1n_ze">alb1n_ze</a></li>
+      <li>Email - <a href="mailto:aze@azedev.net">aze@azedev.net</a></li>
+      <li>Blog - <a href="https://blog.azedev.net"></ahref>blog.azedev.net</a></li>
+    </ul>
+    <hr>
 </html>

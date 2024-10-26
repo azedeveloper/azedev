@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(robotomono.woff) format('woff2');
+    font-display: swap;
+}
+
+:root {
+    --text-color: #000000;
+    --link-color: #0000ee;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: 
+    'Roboto Mono', 
+    monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    max-width: 768px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 12px 6px;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+a:visited {
+    color: var(--link-color);
+}
+
+a:active,
+a:hover {
+    color: #ffffff;
+    background-color: var(--link-color);
+}
+
+p, ul, ol, hr, section {
+    margin: 12px 0;
+}
+
+li {
+    list-style-type: square;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3rem;
+    position: relative;
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+h1 {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+h1::after {
+    content: "=================================================";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+
+h2::before {
+    content: "### ";
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #eeeeee;
+        --link-color: #0392da;
+    }
+
+    body {
+        background: #000000;
+        color: var(--text-color);
+    }
+
+    input,
+    select {
+        background-color: #111111;
+        border-color: #343434;
+        border-style: solid;
+        border-radius: 2px;
+        color: var(--text-color);
+    }
+
+    hr {
+        filter: brightness(0.3);
+    }
+}
+
+
+.image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .image-slideshow img {
+    width: 60%
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+  .columns {
+    display: flex;
+
+  }
+  
+  .column {
+    flex: 1;
+  }
+
+  
+.column:first-child {
+    margin-right: -200px; 
+  }
+
+
+  @media screen and (max-width: 600px) {
+   .image-slideshow img {
+    width: 100%;
+   }
+  }
+
+  
+  .stars {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: -2;
+}
+
+.twinkling {
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+	
+}
+  
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+
+  .avatar {
+    width: 15px;
+    margin-left: 5px;
+  }
+
+code {
+    background-color: #000000;
+
+}
+
+.post {
+    width: 170px;
+    height: 170px;
+    justify-content: center;
+    text-align: center;
+}
+
+.post-items {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post-holder {
+    display: flex;
+}
