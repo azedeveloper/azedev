@@ -174,3 +174,14 @@ code {
 .post-holder {
     display: flex;
 }
+
+.border {
+    border: 1px solid #303030;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+}
+
+li {
+    margin-left: 15px;
+}
