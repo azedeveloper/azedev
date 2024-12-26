@@ -185,3 +185,11 @@ code {
 li {
     margin-left: 15px;
 }
+
+.screenshot {
+    max-width: 350px;
+}
+
+#donator {
+    max-width: 300px;
+}
