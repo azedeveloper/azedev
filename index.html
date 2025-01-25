@@ -1,45 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="azedev.net">
-    <link rel="preload" href="assets/robotomono.woff" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>azedev.net</title>
-  </head>
-  <body>
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-   <!-- <img src="assets/saturn.webp" alt="Saturn" width="50px" height="50px">-->
-    <br>
-    <h1>azedev.net</h1>
-  
-    <p>
-      Welcome to my personal portfolio.
-    </p>
-    <h2>About Me</h2>
-    <p>I'm Albin, a self-taught software developer and computer nerd located in Sweden with over 5 years of experience.</p>
-    <p>I specialize in many different frameworks and languages such as:</p>
-    <div class="border">
-      <p><b>C, C++, C#, JavaScript, Python, Java, PHP, HTML, CSS</b></p>
-      <p><b>Unity, SDL2, Laravel, React, Vue, LibGDX, NodeJS</b></p>
-    </div>
-    <p>In addition to my programming interests, I'm also into music production and fashion.</p>
-    <br>
-    <h2>My Projects:</h2>
-    <ul>
-        <li><a href="projects/oxploit.html">Oxploit</a> - A Minecraft anarchy server co-owned by me.s</li>
-        <li><a href="projects/nanocode.html">NanoCode</a> - A minimalistic code editor made in Tauri.</li>
-        <li><a href="projects/rayrooms.html">Rayrooms</a> - A 3D raycaster game made purely in C and OpenGL.</li>
-        <li><a href="projects/astroblast.html">Astroblast</a> - A simple rougelike space-shooter made in Unity.</li>
-    </ul>
-    <h2>Contact:</h2>
-    <ul>
-      <li>Email - <a href="mailto:albin@azedev.net">albin@azedev.net</a></li>
-      <li>GitHub - <a href="https://github.com/azedeveloper"></ahref>azedeveloper</a></li>
-      <li>Blog - <a href="https://blog.azedev.net"></ahref>blog.azedev.net</a></li>
-    </ul>
-    <hr>
+</head>
+<body>
+    <section id="home">
+        <div class="ascii-cube">
+            <p id="cube"></p>
+        </div>
+        <h1>Hi I'm <span id="name">Albin</span></h1>
+        <p id="comment"><a href="#about">//Scroll down 👇</a></p>
+    </section>
+    <section id="about">
+        <h1>About me</h1>
+        <p>👋 Hi, I'm <span id="name">Albin</span>. A self-taught software developer and computer nerd located in Sweden</p>
+        <p>I have over 5+ years of experience in multiple frameworks and languages such as:</p>
+        <div class="skills">
+            <div class="skill">
+                <img src="assets/img/html.png" alt="html">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/css.png" alt="css">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/js.png" alt="js">
+                <p>JS</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/cpp.png" alt="js">
+                <p>C/C++</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/java.png" alt="js">
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/py.png" alt="js">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/cs.png" alt="js">
+                <p>C#</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/php.png" alt="js">
+                <p>PHP</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/unity.png" alt="js">
+                <p>Unity</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/sdl2.png" alt="js">
+                <p>SDL2</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/laravel.png" alt="js">
+                <p>Laravel</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/react.png" alt="js">
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/vue.png" alt="js">
+                <p>Vue</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/opengl.png" alt="js">
+                <p>OpenGL</p>
+            </div>
+            <div class="skill">
+                <img src="assets/img/node.png" alt="js">
+                <p>NodeJS</p>
+            </div>
+        </div>
+        <p>I'm currently practicing low-level-programming with x86 Assembly.</p>
+        <p id="comment"><a href="#projects">//There's more 👇</a></p>
+
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <p>These are some of my public projects:</p>
+        <div class="projects">
+            <div class="project" onclick="window.open('https://discord.gg/DvsRTe3yn3')">
+                <img src="assets/img/neverdies.png" alt="neverdies">
+                <p><b>Neverdies</b></p>
+                <div class="using">
+                    <div class="item">Java</div>
+                    <div class="item">Fabric API</div>
+                </div>
+                <p>A Minecraft PvP and Utility Client on the latest versions.</p>
+            </div>
+            <div class="project" onclick="window.open('https://github.com/azedeveloper/lambda-chat')">
+                <img src="assets/img/lambdachat.png" alt="lambdachat">
+                <p><b>Lambda Chat</b></p>
+                <div class="using">
+                    <div class="item">Python</div>
+                    <div class="item">Sockets</div>
+                </div>
+                <p>A (soon-to-be) e2ee chat client and server.</p>
+            </div>
+            <div class="project" onclick="window.open('https://github.com/azedeveloper/nanocode')">
+                <img src="assets/img/nanocode.jpeg" alt="nanocode">
+                <p><b>NanoCode</b></p>
+                <div class="using">
+                    <div class="item">Tauri</div>
+                    <div class="item">Rust</div>
+                    <div class="item">JS</div>
+                </div>
+                <p>A Minimalistic, Open-Source and Light-weight code editor.</p>
+            </div>
+            <div class="project" onclick="window.open('https://github.com/azedeveloper/rayrooms')">
+                <img src="assets/img/rayrooms.png" alt="rayrooms">
+                <p><b>Rayrooms</b></p>
+                <div class="using">
+                    <div class="item">C</div>
+                    <div class="item">OpenGL</div>
+                </div>
+                <p>A 3D raycaster game based on the backrooms.</p>
+            </div>
+            <div class="project" onclick="window.open('https://oxploit.org/')">
+                <img src="assets/img/oxploit.png" alt="oxploit">
+                <p><b>Oxploit</b></p>
+                <div class="using">
+                    <div class="item">Java</div>
+                    <div class="item">Minecraft</div>
+                </div>
+                <p>A new anarchy server on the latest minecraft versions.</p>
+            </div>
+            <div class="project" onclick="window.open('https://azedev.itch.io/astroblast')">
+                <img src="assets/img/astroblast.png" alt="astroblast">
+                <p><b>Astroblast</b></p>
+                <div class="using">
+                    <div class="item">Unity</div>
+                </div>
+                <p>A Minimalistic, Open-Source and Light-weight code editor.</p>
+            </div>
+            <p id="comment"><a href="#contact">//One last time... 👇</a></p>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Here are some of my socials:</p>
+        <ul>
+            <div class="skills">
+                <div class="skill" onclick="window.open('https://github.com/azedeveloper')">
+                    <img src="assets/img/github.png" alt="github">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill" onclick="window.open('https://twitter.com/alb1n_ze')">
+                    <img src="assets/img/twitter.png" alt="twitter">
+                    <p>Twitter</p>
+                </div>
+                <div class="skill" onclick="window.open('mailto:albin@azedev.net')">
+                    <img src="assets/img/email.png" alt="email">
+                    <p>Email</p>
+                </div>
+                <div class="skill" onclick="window.open('https://discordapp.com/users/1293175339207491585')">
+                    <img src="assets/img/discord.png" alt="discord">
+                    <p>Discord</p>
+                </div>
+                <div class="skill" onclick="window.open('https://blog.azedev.net/')">
+                    <img src="assets/img/blog.png" alt="blog">
+                    <p>Blog</p>
+                </div>
+            </div>
+        </ul>
+        <p id="comment"><a href="#home">//That's it! Scroll through again? ☝️</a></p>
+    </section>
+
+    <script src="assets/js/cube.js"></script>
+</body>
 </html>

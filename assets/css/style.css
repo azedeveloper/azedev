@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: black;
+    color: white;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 30px;
+}
+
+#cube {
+    /*margin-right: 140px; FOR 15 HORIZONTAL WIDTH CUBE*/
+    margin-right: 180px;
+    margin-bottom: -50px;
+}
+
+#cube {
+    animation: rainbow 7s infinite;
+}
+
+#name {
+    animation: rainbow 7s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        color: magenta;
+    }
+    25% {
+        color: rgb(210, 106, 255);
+    }
+    50% {
+        color: magenta;
+    }
+    75% {
+        color: rgb(210, 106, 255);
+    }
+    100% {
+        color: magenta;
+    }
+}
+
+
+#comment {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #9b9b9b;
+    transition-duration: 300ms;
+}
+
+#comment a {
+    color: #9b9b9b;
+    text-decoration: none;
+}
+
+#comment:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+}
+
+#about p {
+    max-width: 900px;
+}
+
+#about h1 {
+    margin-bottom: 10px;
+}
+
+#projects h1 {
+    margin-bottom: 10px;
+}
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: calc((85px + 20px) * 7);
+}
+
+.skill {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #9b9b9b;
+    transition-duration: 300ms;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.skill img {
+    width: 50px;
+    max-height: 50px;
+    margin-bottom: 5px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: calc((500px + 20px) * 3);
+}
+
+.project {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #9b9b9b;
+    transition-duration: 500ms;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.project img {
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+
+li {
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: left;
+    list-style: square;
+}
+
+.project b {
+    font-size: 25px;
+}
+
+.project .using {
+    display: flex;
+    gap: 15px;
+}
+
+.project .using .item {
+    margin-top: 3px;
+    margin-bottom: 4px;
+    padding: 3px;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 5px;
+}
