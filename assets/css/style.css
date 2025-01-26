@@ -133,7 +133,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     max-width: calc((500px + 20px) * 3);
 }
 
@@ -183,4 +183,15 @@ li {
     padding: 3px;
     border: 1px solid rgb(145, 145, 145);
     border-radius: 5px;
+}
+
+#about {
+    max-width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 600px) and (max-height: 1000px) {
+    #about {
+        min-height: 200vh;
+    }
 }
